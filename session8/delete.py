@@ -1,8 +1,8 @@
-# vari = ['a','b','c']
-# vari[2] = input('nhap variable moi:')  
-# print(*vari,sep=',')
-# vari.pop(1)
-# print(*vari, sep=',')
+vari = ['a','b','c']
+vari[2] = input('nhap variable moi:')  
+print(*vari,sep=',')
+vari.pop(1)
+print(*vari, sep=',')
 
 # found = False
 # a = input('thu can xoa:')

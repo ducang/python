@@ -40,14 +40,25 @@ skill =[
 print('Choose your action:')
 for i,j in enumerate(skill):
     print(i+1,'.',j['Name'])
-action = int(input('Enter your action:'))
 
-coin = randint(0,1)
 
-if char['Level'] >= skill[action - 1]['Minimum level']:
-    if coin >= skill[action - 1]['Hit rate']:
-        print('Damage dealt:',skill[action - 1]['Damage'])
+
+print('Your enemy ahead!!')
+hp = 100
+print('Enemy HP =',hp)
+while True:
+    coin = randint(0,1)
+    action = int(input('Enter your action:'))
+    if char['Level'] >= skill[action - 1]['Minimum level']:
+        if coin >= skill[action - 1]['Hit rate']:
+            print('Damage dealt:',skill[action - 1]['Damage'])
+            hp -= skill[action - 1]['Damage']
+            print('Enemy HP =',hp)
+        else:
+            print('Miss!')
+        char['HP'] -= skill[1]['Damage']
+        print('Enemy used quick attack','\n','HP lost:',skill[1]['Damage'],'\n','Your HP:', char['HP'])
+        
     else:
-        print('Miss!')
-else:
-    print('Not learned yet')
+        print('Not learned yet')
+    

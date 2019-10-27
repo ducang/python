@@ -1,0 +1,16 @@
+.font {
+    font-family: 'Fira Code', monospace;
+}
+
+#author {
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+}
+
+.color {
+    color: orange;
+}
+
+.color-heading {
+    color: black
+}

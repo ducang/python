@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,56 @@
     <title>Basic Codes</title>
     <link rel="stylesheet" href="p.css">
 </head>
+
 <body>
+    
+    <div class="container">
+        <button class="tabsLink" id="p"
+            onclick="window.location='file:///C:/Users/omg37/Documents/C4T18/last%20project/homePage/p.html'">Home</button>
+        <button class="tabsLink" id="html"
+            onclick="window.location='file:///C:/Users/omg37/Documents/C4T18/last%20project/tabs/html/html.html'">HTML</button>
+        <button class="tabsLink" id="js"
+            onclick="window.location='file:///C:/Users/omg37/Documents/C4T18/last%20project/tabs/js/javascript.html'">Javascript</button>
+        <button class="tabsLink" id="css"
+            onclick="window.location='file:///C:/Users/omg37/Documents/C4T18/last%20project/tabs/css/css.html'">CSS</button>
+        <button class="tabsLink" id="python"
+            onclick="window.location='file:///C:/Users/omg37/Documents/C4T18/last%20project/tabs/python/python.html'">Python</button>
+    </div>
+    <!-- <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="https://fossbytes.com/wp-content/uploads/2017/12/HTML-5.2.jpg"  alt="html 5.2">
+        </div>
+        <div class='slides fade'>
+            <img src="https://i0.wp.com/viknews.com/vi/wp-content/uploads/2019/07/javascript-l%C3%A0-g%C3%AC.png" style='width: 900px; height:506;' alt="javascript">
+        </div>
+        <div class="slides fade"></div>
+        <div class="slides fade"></div>
+    </div> -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="https://fossbytes.com/wp-content/uploads/2017/12/HTML-5.2.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="https://i0.wp.com/viknews.com/vi/wp-content/uploads/2019/07/javascript-l%C3%A0-g%C3%AC.png" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+    </div>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-        <button onclick="home()" class="tabs">Home</button>
-        <button onclick="python()" class="tabs">Python</button>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="content">
     </div>
     <script src="p.js"></script>
 </body>
+
 </html>
